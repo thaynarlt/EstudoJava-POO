@@ -1,2 +1,4 @@
-package EstruturaRepetitiva.ExerciciosFor;public class ExercicioUm {
+package EstruturaRepetitiva.ExerciciosFor;
+
+public class ExercicioUm {
 }

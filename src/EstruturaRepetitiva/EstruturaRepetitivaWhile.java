@@ -2,7 +2,7 @@ package EstruturaRepetitiva;
 
 import java.util.Scanner;
 
-public class EstruturaRepetitiva {
+public class EstruturaRepetitivaWhile {
     public static void main(String[] args) {
         /*
         Estrutura Repetitiva

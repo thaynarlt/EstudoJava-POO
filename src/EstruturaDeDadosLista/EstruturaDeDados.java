@@ -1,4 +1,4 @@
-package EstrutuaDeDadosLista;
+package EstruturaDeDadosLista;
 
 import java.util.ArrayList;
 import java.util.List;
