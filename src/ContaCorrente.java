@@ -71,12 +71,12 @@ public class ContaCorrente {
 
         // Instâncias das contas correntes com valores lidos do teclado
         for (int i = 0; i < numContas; i++) {
-            System.out.println("Número da conta " + (i + 1) + ":");
+            System.out.println("Número da POO.conta " + (i + 1) + ":");
             int numero = scanner.nextInt();
-            System.out.println("Saldo Inicial da conta " + (i + 1) + ":");
+            System.out.println("Saldo Inicial da POO.conta " + (i + 1) + ":");
             double saldoInicial = scanner.nextDouble();
             scanner.nextLine(); // Limpa o buffer do scanner
-            System.out.println("Nome do titular da conta " + (i + 1) + ":");
+            System.out.println("Nome do titular da POO.conta " + (i + 1) + ":");
             String nomeTitular = scanner.nextLine();
             contas[i] = new ContaCorrente(numero, saldoInicial, nomeTitular);
         }
@@ -114,9 +114,9 @@ public class ContaCorrente {
         scanner.close();
     }
 
-    // 1) Depositar: Ao digitar a opção 1, o programa deverá ler o número da conta e o valor a ser depositado, e realizar a operação.
+    // 1) Depositar: Ao digitar a opção 1, o programa deverá ler o número da POO.conta e o valor a ser depositado, e realizar a operação.
     public static void depositar(ContaCorrente[] contas, Scanner scanner) {
-        System.out.println("Informe o número da conta: ");
+        System.out.println("Informe o número da POO.conta: ");
         int numeroConta = scanner.nextInt();
 
         for (ContaCorrente conta : contas) {
@@ -131,9 +131,9 @@ public class ContaCorrente {
         System.out.println("Conta não encontrada.");
     }
 
-    // 2) Sacar: Ao digitar a opção 2, o programa deverá ler o número da conta e o valor a ser sacado, e realizar a operação, testando se o saque ocorreu ou não.
+    // 2) Sacar: Ao digitar a opção 2, o programa deverá ler o número da POO.conta e o valor a ser sacado, e realizar a operação, testando se o saque ocorreu ou não.
     public static void sacar(ContaCorrente[] contas, Scanner scanner) {
-        System.out.println("Informe o número da conta:");
+        System.out.println("Informe o número da POO.conta:");
         int numeroConta = scanner.nextInt();
 
         for (ContaCorrente conta : contas) {
@@ -152,14 +152,14 @@ public class ContaCorrente {
         System.out.println("Conta não encontrada!");
     }
 
-    // 3) Saldo: Ao digitar a opção 3, o programa deverá ler o número da conta e exibir o seu saldo.
+    // 3) Saldo: Ao digitar a opção 3, o programa deverá ler o número da POO.conta e exibir o seu saldo.
     public static void exibirSaldo(ContaCorrente[] contas, Scanner scanner) {
-        System.out.println("Informe o número da conta: ");
+        System.out.println("Informe o número da POO.conta: ");
         int numeroConta = scanner.nextInt();
 
         for (ContaCorrente conta : contas) {
             if (conta != null && conta.getNumero() == numeroConta) {
-                System.out.println("Saldo da conta: " + conta.getSaldo());
+                System.out.println("Saldo da POO.conta: " + conta.getSaldo());
                 return;
             }
         }
